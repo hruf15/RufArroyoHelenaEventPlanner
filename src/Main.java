@@ -31,15 +31,20 @@ boolean exit = false;
                 switch (opcionMenu) {
         case 1:
             System.out.println("Ha escogido añadir Evento");
+            System.out.println("Introduzca el titulo del Evento a añadir:");
+
             break;
         case 2:
             System.out.println("\nHa escogido borrar Evento");
+            System.out.println("Introduzca el nombre del Evento a borrar:");
             break;
         case 3:
             System.out.println("\nHa escogido Listar evento");
+            //listEvents (events);
             break;
         case 4:
             System.out.println("Ha escogido Marcar/desmarcar tarea de un evento como completada");
+
             break;
         case 5:
             System.out.println("Ha escogido Salir. Gracias por su colaboración");

@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.PriorityQueue;
 
 public class Event {
@@ -55,6 +56,18 @@ public Event (String title,LocalDate date, Priority priority) {
                 ", task=" + task +
                 '}';
 
+    }
+
+    private static void listEvents(ArrayList<Event> events){
+    if (events.isEmpty()) {
+        System.out.println("No hay ningún Evento registrado");
+    }else{
+        System.out.println("\n Listado de Eventos:");
+        for (int i= 0; i< events.size(); i++){
+            System.out.println("(i +1)" + events.get(i).toString());
+            System.out.println("   ");
+        }
+    }
     }
     }
 
