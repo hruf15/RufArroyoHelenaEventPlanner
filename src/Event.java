@@ -13,7 +13,7 @@ public class Event {
     private Priority priority;
     private ArrayList<String> task;
 
-public Event () {
+public Event (String title,LocalDate date, Priority priority) {
     this.title = title;
     this.date = date;
     this.priority = priority;
@@ -34,9 +34,27 @@ public Event () {
         return task;
     }
 
-}
     public void setTitle(String title) {
         this.title = title;
+    }
+    public void setDate (LocalDate date) {
+        this.date = date;
+    }
+    public void setPriority (Priority priority){
+        this.priority = priority;
+    }
+    public void setTask(ArrayList<String> task){
+        this.task = task;
+    }
+    @Override
+    public String toString() {
+        return "Event {" +
+                "title='" + title + '\'' +
+                ", date=" + date +
+                ", priority=" + priority +
+                ", task=" + task +
+                '}';
 
+    }
+    }
 
-}
