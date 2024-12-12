@@ -20,6 +20,7 @@ public class Main {
 
 
         while (!exit) {
+
             System.out.println("Menú de opciones. Seleccione una opción");
             System.out.println();
             System.out.println("[1]Añadir Evento");
@@ -57,7 +58,8 @@ public class Main {
             }
         }
     }
-
+    /**
+     * se añade método para añadir evento*/
     public void anadirEvento() {
         System.out.println("Ha escogido añadir Evento");
         System.out.println("Introduzca el titulo del Evento a añadir:");
@@ -77,7 +79,8 @@ public class Main {
     }
 
     public void borrarEvento() {
-
+/**
+ * se añade método para borrar evento*/
         System.out.println("\nHa escogido borrar Evento");
         System.out.println("Introduzca el nombre del Evento a borrar:");
         String titleToDelete = scanner.nextLine();
@@ -95,6 +98,8 @@ public class Main {
     }
 
     public void listarEvento() {
+        /**
+         * se añade método para listar evento*/
         System.out.println("\nHa escogido Listar evento");
         if (events.isEmpty()) {
             System.out.println("No hay eventos registrados.");
@@ -107,6 +112,9 @@ public class Main {
     }
 
     public void marcarEvento() {
+
+        /**
+         * se añade método para marcar/desmarcar evento*/
         System.out.println("Ha escogido Marcar/desmarcar tarea de un evento como completada");
         System.out.println("Introduzca el titulo del Evento marcar/desmarcar");
         System.out.println("[1] Marcar");
